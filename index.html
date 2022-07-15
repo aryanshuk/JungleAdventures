@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>
+        Jungle Adventures
+    </title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="initializeValues();homePage()" id="body">
+    <script>
+        document.addEventListener("dblclick", () => {
+            toggleFullScreen();
+        })
+    </script>
+    <h1 id="heading">JUNGLE ADVENTURES</h1>
+    <div id="board">
+
+        <div class="items" id="object0" onclick="changeScore()">🍋</div>
+        <div class="items" id="object1" onclick="changeScore()">🍒</div>
+        <div class="items" id="object2" onclick="changeScore()">🍍</div>
+        <div class="items" id="object3" onclick="changeScore()">🍎</div>
+        <div class="items" id="object4" onclick="changeScore()">🥕</div>
+        <div class="items" id="object5" onclick="changeScore()">🍇</div>
+        <div class="items" id="object6" onclick="changeScore()">🍉</div>
+        <div class="items" id="object7" onclick="changeScore()">🍓</div>
+        <div class="items" id="object8" onclick="changeScore()">🍐</div>
+        <div class="items" id="object9" onclick="changeScore()">🌻</div>
+        <div class="items" id="object10" onclick="changeScore()">🌺</div>
+        <div class="items" id="object11" onclick="changeScore()">🌹</div>
+        <div class="items" id="object12" onclick="changeScore()">🎃</div>
+        <div class="items" id="object13" onclick="changeScore()">🌵</div>
+        <div class="items" id="object14" onclick="changeScore()">🐍</div>
+        <div class="items" id="object15" onclick="changeScore()">🐯</div>
+        <div class="items" id="object16" onclick="changeScore()">🦊</div>
+        <div class="items" id="object17" onclick="changeScore()">🦁</div>
+        <div class="items" id="object18" onclick="changeScore()">🐺</div>
+        <div class="items" id="object19" onclick="changeScore()">❤️</div>
+    </div>
+
+    <div>
+        <div class="items" id="heart">❤️<br /></div>
+        <div class="items" id="skull">☠️<br /></div>
+    </div>
+
+    <div id="lives"><span id="currentLives"></span></div>
+
+    <button id="newGameButton" onclick="startGame()"> New Game </button>
+    <button id="quitGameButton" onclick="finishGame()"> Quit Game </button>
+
+    <div id="dividerLine"></div>
+
+    <div class="score" id="currentScoreDiv">Your Score
+        <hr /><br /><span id="currentScoreSpan"></span>
+    </div>
+    <div class="score" id="highScoreDiv">High Score
+        <hr /> <br /><span id="highScoreSpan"></span>
+    </div>
+
+
+    <button id="startGameButton" onclick="preGameStartAnimation();gameStartAnimation();">Start Game</button>
+    <button id="gameInstructionButton" onclick="showInstructions()">Game Instructions</button>
+    <button id="exitGameButton" onclick="gameExitAnimation()">Exit Game</button>
+    <button id="closeInstructionButton" onclick="hideInstructions()">Close Instructions</button>
+
+    <div id="fullScreenInstruction">To Toggle Full Screen On/Off,<br /> Double Tap Anywhere on the Screen</div>
+
+    <div id="gameInstructionDiv">
+        <h3><u>Game Instructions</u></h3>
+        <h2 style="color: brown;"> Welcome to the Jungle</h2>
+
+        <span>
+            You are an Adventurer out in the Jungle. You found that this jungle is full of surprises, and you need
+            to
+            play a game for your survival.
+        </span>
+
+        <br /><br />
+        <span>
+            In the game, you can collect fruits and flowers which will also give you some points.
+        </span>
+        <span>
+            <br />Fruits : +10 Points {🍋🍒🍍🍎🥕🍇🍉🍓🍐}
+            <br />Flowers : +5 Points {🌻🌺🌹}
+            <br />
+        </span>
+        <br />
+        <span>
+            In the game, you have 5 lives(❤️) in total. If you miss any fruit or flower, you will loose a
+            life.
+            <br /> Special Item : Collect hearts to increase your lives if you have lost any.
+            <br />Heart (❤️) : +20 Points & +1❤️
+        </span>
+        <br /><br />
+        <span>
+            Jungle being a Jungle!!! There are also dangers from which you need to save yourself.
+            <br />Tap on Dangers : -20 Points {🎃🌵🐍🐯🦊🦁🐺}
+        </span>
+        <br /><br />
+        <span>
+            Adventure Awaits.....
+        </span>
+    </div>
+
+    <div id="alertBox">
+        <u>Game Over</u>
+        <div id="noHighScoreEmoji1" class="items">☠️</div>
+        <div id="noHighScoreEmoji2" class="items">☠️</div>
+
+        <div id="highScoreEmoji1" class="items">😎</div>
+        <div id="highScoreEmoji2" class="items">😎</div>
+        <br /><br /><br />
+        <span id="scoreInfoSpan"></span>
+
+        <button id="retryButton" onclick="closeScoreAlert();startGame()">Retry</button>
+        <button id="closeButton" onclick="closeScoreAlert();">Close</button>
+
+    </div>
+</body>
+
+</html>

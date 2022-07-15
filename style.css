@@ -1,0 +1,292 @@
+body {
+    background-image: url("./images/home-page-background.jpg");
+    background-size: cover;
+    color: brown;
+    overflow: hidden;
+    user-select: none;
+    user-zoom: ;
+}
+
+button {
+    display: none;
+    background-color: bisque;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid brown;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 4px 8px brown;
+    cursor: pointer;
+    font-weight: bold;
+    transition: ;
+}
+
+button:active {
+    box-shadow: 6px 9px brown;
+    transform: translateY(5px);
+}
+
+#gameInstructionButton {
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+
+#closeInstructionButton {
+    width: 13%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+#retryButton {
+    display: block;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+#closeButton {
+    display: block;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+
+#startGameButton {
+    width: 15%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+#exitGameButton {
+    width: 10%;
+    height: 11%;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+
+#newGameButton {
+    width: 10%;
+    height: 11%;
+    position: absolute;
+    top: 60%;
+    right: 2%;
+}
+
+#quitGameButton {
+    width: 10%;
+    height: 11%;
+    position: absolute;
+    top: 65%;
+    right: 2%;
+}
+
+div {
+    display: none;
+    border: 6px solid brown;
+    background-color: bisque;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score {
+    width: 10%;
+    height: 10%;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 4px 5px brown;
+}
+
+#currentScoreDiv {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    background-color: bisque;
+}
+
+#highScoreDiv {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    background-color: bisque;
+
+}
+#currentScoreSpan {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+}
+
+#highScoreSpan {
+    position: absolute;
+    top: 60%;
+    right: 40%;
+}
+
+
+
+#board {
+    background-image: url("./images/jungle-board.jpg");
+    background-size: cover;
+    border: 10px solid brown;
+    width: 75%;
+    height: 85%;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+
+#lives {
+    width: 6%;
+    background-color: bisque;
+    height: 415px;
+    font-size: 60px;
+    position: absolute;
+    top: 10%;
+    left: 78%;
+}
+
+
+
+#dividerLine {
+    display: none;
+    background-color: brown;
+    border: 6px solid brown;
+    border-radius: 5px;
+    height: 85%;
+    position: absolute;
+    top: 10%;
+    right: 200px;
+}
+
+
+.items {
+    display: none;
+    height: 80px;
+    width: 80px;
+    font-size: 70px;
+    border: 0px;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+hr {
+    border: 2px solid brown;
+    border-radius: 5px;
+    background-color: brown;
+}
+
+#heading {
+    display: none;
+    font-size: 50px;
+    text-shadow: 0 0 10px bisque;
+    padding-left: 125px;
+}
+
+#heart {
+    display: none;
+}
+
+#skull {
+    display: none;
+}
+
+#gameInstructionDiv {
+    display: none;
+    background-size: cover;
+    border: 5px solid brown;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+
+#fullScreenInstruction {
+    display: none;
+    background-color: bisque;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid brown;
+    border-radius: 15px;
+    width: 26%;
+    height: 12%;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 4px 5px brown;
+    position: absolute;
+    top: 75%;
+    left: 36%;
+    padding: 25px;
+    font-weight: normal;
+}
+
+
+#alertBox {
+    display: none;
+    border-radius: 15px;
+    width: 50%;
+    height: 60%;
+    font-size: 45px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-top: 25px;
+}
+
+#noHighScoreEmoji1 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+#noHighScoreEmoji2 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+#highScoreEmoji1 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+#highScoreEmoji2 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+#scoreInfoSpan {
+    display: block;
+}
