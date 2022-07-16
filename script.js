@@ -411,7 +411,7 @@ function readHighScore() {
     highScore = window.localStorage.getItem(highScoreKey);
     if (highScore == null) {
         console.log("highScore key : not found in localStorage. Initializing high");
-        highScore = "0";
+        highScore = 0;
         window.localStorage.setItem(highScoreKey, JSON.stringify(highScore));
         console.log("highScore key initialized with value 0 in localStorage.");
     }
