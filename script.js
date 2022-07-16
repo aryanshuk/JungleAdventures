@@ -415,7 +415,7 @@ function readHighScore() {
         window.localStorage.setItem(highScoreKey, JSON.stringify(highScore));
         console.log("highScore key initialized with value 0 in localStorage.");
     }
-    highScore = highScore.trim(1,highScore.length-1);
+    // highScore = highScore.trim(1,highScore.length-1);
     highScoreSpan.innerHTML = highScore;
     console.log("highScoreSpan updated with value " + highScore + " from localStorage.");
 }
