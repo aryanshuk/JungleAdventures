@@ -15,7 +15,10 @@ function toggleFullScreen() {
 
 
 function initializeValues() {
-    console.log("First Time Values initialized!!");
+    document.addEventListener("dblclick",toggleFullScreen);
+
+    console.log("First Time Values initializqtion started!!");
+
     board = document.getElementById("board");
     lives = document.getElementById("lives");
     currentlives = document.getElementById("currentLives");
@@ -62,6 +65,7 @@ function initializeValues() {
     for (let i = 0; i < noOfObjects; i++) {
         objectList[i] = document.getElementById("object" + i).innerHTML;
     }
+    console.log("First Time Values initialized!!");
 }
 
 
