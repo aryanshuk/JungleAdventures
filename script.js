@@ -9,13 +9,13 @@ function toggleFullScreen() {
     else {
         document.documentElement.requestFullscreen().catch((err) => {
             console.log(err);
-        }) 
+        })
     }
 }
 
 
 function initializeValues() {
-    document.addEventListener("dblclick",toggleFullScreen);
+    document.addEventListener("dblclick", toggleFullScreen);
 
     console.log("First Time Values initializqtion started!!");
 
@@ -67,7 +67,6 @@ function initializeValues() {
     }
     console.log("First Time Values initialized!!");
 }
-
 
 function homePage() {
     board.style.display = "none";
@@ -207,6 +206,7 @@ function gameExitAnimation() {
         clearTimeout(timeoutReference);
         console.log("Game Exit Animation Completed!!");
         homePage();
+        pauseAudio();
     }
 }
 function displayLives() {
