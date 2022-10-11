@@ -10,10 +10,20 @@
 </head>
 
 <body onload="initializeValues();homePage()" id="body">
+    <script>
 
+        function playAudio() {
+            var x = document.getElementById("bgaudio");
+            x.play();
+        }
+
+        function pauseAudio() {
+            var x = document.getElementById("bgaudio");
+            x.pause();
+        } 
+    </script>
     <h1 id="heading">JUNGLE ADVENTURES</h1>
     <div id="board">
-
         <div class="items" id="object0" onclick="changeScore()">🍋</div>
         <div class="items" id="object1" onclick="changeScore()">🍒</div>
         <div class="items" id="object2" onclick="changeScore()">🍍</div>
@@ -43,6 +53,10 @@
 
     <div id="lives"><span id="currentLives"></span></div>
 
+    <audio loop id="bgaudio">
+        <source src="background.mp3" type="audio/mpeg">
+    </audio>
+
     <button id="newGameButton" onclick="startGame()"> New Game </button>
     <button id="quitGameButton" onclick="finishGame()"> Quit Game </button>
 
@@ -56,7 +70,7 @@
     </div>
 
 
-    <button id="startGameButton" onclick="preGameStartAnimation();gameStartAnimation();">Start Game</button>
+    <button id="startGameButton" onclick="preGameStartAnimation();playAudio();gameStartAnimation();">Start Game</button>
     <button id="gameInstructionButton" onclick="showInstructions()">Game Instructions</button>
     <button id="exitGameButton" onclick="gameExitAnimation()">Exit Game</button>
     <button id="closeInstructionButton" onclick="hideInstructions()">Close Instructions</button>
@@ -112,7 +126,6 @@
 
         <button id="retryButton" onclick="closeScoreAlert();startGame()">Retry</button>
         <button id="closeButton" onclick="closeScoreAlert();">Close</button>
-
     </div>
 </body>
 
